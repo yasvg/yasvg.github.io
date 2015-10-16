@@ -4,6 +4,11 @@
     <title>Inline Editor Example</title>
 </head>
 <link rel="stylesheet" type="text/css" href="style.css">
+<!-- Angular 1.4.7 lib -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+
+<!-- Controller -->
+<script src="controller.js"></script>
 
 <body>
     <!-- When this element is clicked, hide the tooltip -->
@@ -23,13 +28,6 @@
         <p ng-click="toggleTooltip($event)">{{value}}</p>
 
     </div>
-
-    <!-- Angular 1.4.7 lib -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-
-    <!-- Controller -->
-    <script src="controller.js"></script>
-
 </body>
 
 </html>
