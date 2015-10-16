@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Menu Example</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+    <!-- When this element is clicked, hide the tooltip -->
+    <div id="main" ng-app ng-controller="InlineEditorController" ng-click="hideTooltip()">
+
+        <!-- This is the tooltip. It is shown only when the showtooltip variable is truthful -->
+        <div class="tooltip" ng-click="$event.stopPropagation()" ng-show="showtooltip">
+
+            <!-- ng-model binds the contents of the text field with the "value" model.
+		 Any changes to the text field will automatically update the value, and
+		 all other bindings on the page that depend on it.  -->
+            <input type="text" ng-model="value" />
+        </div>
+
+        <!-- Call a method defined in the InlineEditorController that toggles
+	 the showtooltip variable -->
+        <p ng-click="toggleTooltip($event)">{{value}}</p>
+
+    </div>
+
+    <!-- Angular 1.4.7 lib -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+
+    <!-- Controller -->
+    <script src="controller.js"></script>
+
+</body>
+
+</html>
