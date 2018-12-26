@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Personal Website of Vikas Gourav(VG)
 
-You can use the [editor on GitHub](https://github.com/yasvg/yasvg.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is my personal website. It showcases the projects that I have been working on and the projects that I have contributed to.
 
 ### Markdown
 
