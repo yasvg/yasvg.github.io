@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Screen Video Capture Application</title>
+    <link href="app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Screen and Audio Recording System</h1>
+    <div>
+        <video src="" id="vid" autoplay muted></video>
+    </div>
+    <div>
+        <button id="record">Start Recording</button>
+        <button id="stop" disabled>Stop Recording</button>
+        <button id="play">Play Recording</button>
+        <button id="download" disabled>Download</button>
+        <a href="#" id="downloadLink" style="display:none;">Download Link</a>
+    </div>
+    <div>
+        <label for="desktopAudio"><input checked type="checkbox" name="desktopAudio" id="desktopAudio">Record Desktop Audio</label>
+        <label for="micAudio"><input checked type="checkbox" name="micAudio" id="micAudio">Record Microphone Audio</label>
+    </div>
+
+    <script src="record.js"></script>
+</body>
+
+</html>
